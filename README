@@ -1,3 +1,19 @@
+用途：
+中国城市天气查询测试
+
+数据来源：
+中国天气网(http://www.weather.com.cn/)
+
+
 依赖：
 1.HttpRequest (https://github.com/kevinsawicki/http-request)
 2.gson (http://code.google.com/p/google-gson/)
+
+使用测试：
+WeatherClient client = new DefaultWeatherClient();
+System.out.println(client.requestForecast("武汉"));
+System.out.println(client.requestFineForecast("武汉"));
+System.out.println(client.requestRealTimeForecast("武汉"));
+System.out.println(client.requestWeatherIndex("武汉"));
+System.out.println(client.requestAirQuality("武汉"));
+
